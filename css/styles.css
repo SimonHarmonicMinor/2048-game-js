@@ -1,0 +1,120 @@
+body {
+    background: wheat;
+}
+
+.game-2048 {
+    position: relative;
+}
+
+.game-2048 .game-score {
+    position: absolute;
+    font-size: 34px;
+    right: 40px;
+}
+
+.game-2048 .game-field {
+    margin: 30px auto;
+    width: 430px;
+    height: 430px;
+    background: #bfa98e;
+    border-radius: 20px;
+    color: #5d5d5d;
+    font-family: Arial, 'sans-serif';
+    font-size: 27px;
+}
+
+.game-2048 .game-field .game-row {
+    display: flex;
+    padding: 10px 10px 0 10px;
+    height: 95px;
+    justify-content: space-between;
+}
+
+.game-2048 .game-field .game-row .game-cell {
+    width: calc(25% - 10px);
+    border: 3px solid #908269;
+    border-radius: 20px;
+    background: wheat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.game-2048 .game-start {
+    text-align: center;
+}
+
+.game-2048 .game-start .game-start-button {
+    outline: none;
+    color: #191919;
+    font-size: 15px;
+    padding: 10px 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 4px 1px black;
+    background: linear-gradient(wheat, white);
+    cursor: pointer;
+}
+
+.game-2048 .game-start .game-start-button:hover {
+    background: linear-gradient(white, wheat);
+    text-shadow: 0 0 4px white;
+}
+
+.game-2048 .game-field .game-row .game-cell.background-slow-change {
+    -webkit-transition:background .3s;
+    -moz-transition:background .3s;
+    -o-transition:background .3s;
+    transition:background .3s
+}
+
+.game-2048 .game-field .game-row .game-cell.background-default {
+    background: wheat !important;
+}
+
+.game-2048 .game-field .game-row .game-cell.background-2 {
+    background: green;
+}
+
+.game-2048 .game-field .game-row .game-cell.background-4 {
+    background: blue;
+}
+
+.game-2048 .game-field .game-row .game-cell.background-8 {
+    background: navy;
+}
+
+.game-2048 .game-field .game-row .game-cell.background-16 {
+    background: greenyellow;
+}
+
+.game-2048 .game-field .game-row .game-cell.background-32 {
+    background: #FFE594;
+}
+
+.game-2048 .game-field .game-row .game-cell.background-64 {
+    background: #d1affd;
+}
+
+.game-2048 .game-field .game-row .game-cell.background-128 {
+    background: #ffd10e;
+}
+
+.game-2048 .game-field .game-row .game-cell.background-256 {
+    background: #ff9f12;
+}
+
+.game-2048 .game-field .game-row .game-cell.background-512 {
+    background: #ff6814;
+}
+
+.game-2048 .game-field .game-row .game-cell.background-1024 {
+    background: #ff3210;
+}
+
+.game-2048 .game-field .game-row .game-cell.background-2048 {
+    background: #ff0f2e;
+}
+
+
+
